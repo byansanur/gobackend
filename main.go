@@ -21,10 +21,6 @@ func main() {
 		public.POST("/login_admin", controllers.LoginAdmin)
 		public.POST("/login_petugas", controllers.LoginPetugas)
 		public.POST("/login_users", controllers.LoginUsers)
-		//public.POST("/create_akun", controllers.CreateUsers)
-		//public.GET("/akun/list", controllers.GetUsers)
-		//public.GET("/akun/detail", controllers.GetUserDetail)
-		//public.PUT("/akun/update", controllers.UpdateUser)
 	}
 	v1 := router.Group("/api/v1")
 	v1.Use(middleware.Auth)
