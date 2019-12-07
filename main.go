@@ -39,5 +39,5 @@ func main() {
 		v1.GET("/privileges/role", controllers.GetRole)
 		v1.GET("/privileges/type", controllers.GetType)
 	}
-	router.Run(":8000")
+	router.Run(":3000")
 }
